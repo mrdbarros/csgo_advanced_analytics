@@ -1,0 +1,47 @@
+{
+  "name": "csgo_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "d3": "^6.6.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-dropdown": "^1.9.2",
+    "react-scripts": "4.0.3",
+    "react-vega": "^7.4.2",
+    "react-vega-lite": "^6.1.0",
+    "typescript": "^4.2.3",
+    "vega": "^5.19.1",
+    "vega-lite": "^5.0.0",
+    "vega-lite-api": "^5.0.0-beta.1",
+    "vega-tooltip": "^0.25.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
