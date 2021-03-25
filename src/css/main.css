@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background: #d3ae9d;
+}
+
+body .tick {
+  font-size: 1em;
+}
+
+body .tick line {
+  stroke: #5f5f5f96;
+}
+
+body .tick text {
+  fill: #635f5d;
+  cursor: default;
+}
+
+body .tick .axis-label {
+  font-size: 1em;
+  fill: #635f5d;
+  color: #635f5d;
+}
+
+body .graph-container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  row-gap: 0;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  background: w;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+      grid-template-areas: "graph-full-title graph-full-title" "graph-controls graph";
+}
+
+body .graph-container .graph-full-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: graph-full-title;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 0;
+  border-bottom: 1px solid #5f5f5f96;
+}
+
+body .graph-container .graph-full-title .graph-subtitle {
+  font-size: medium;
+}
+
+body .graph-container .graph-controls {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: graph-controls;
+}
+
+body .graph-container .graph-controls .dropdown-label {
+  font-size: 1em;
+  fill: #635f5d;
+  color: #635f5d;
+}
+
+body .graph-container .graph-controls .Dropdown-root {
+  font-size: 1em;
+  margin-bottom: 10%;
+}
+
+body .graph-container .graph-controls .Dropdown-root .Dropdown-menu {
+  max-height: 400px;
+}
+
+body .graph-container .graph {
+  border-left: 1px solid #5f5f5f96;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: graph;
+}
+/*# sourceMappingURL=main.css.map */
