@@ -1,12 +1,44 @@
 $textColor: #635f5d;
 $strokeColor: #5f5f5f96;
-$bodyBackground: #d3ae9d;
+$bodyBackground: #dbdbdb;
 
 body {
   margin: 0;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   background: $bodyBackground;
+
+  .top-nav {
+    display: grid;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    background-color: black;
+
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 1fr;
+    ul {
+      margin: 0 auto;
+      width: 70%;
+      text-align: left;
+
+      li {
+        display: inline;
+        :hover {
+          background-color: grey;
+        }
+        a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
 
   .tick {
     font-size: 1em;
@@ -28,13 +60,13 @@ body {
 
   .graph-container {
     display: grid;
-    margin: 0 auto;
+    margin: 30px auto;
     justify-content: center;
     align-items: center;
     width: 70%;
     row-gap: 0;
     column-gap: 5%;
-    background: w;
+
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 3fr;
     grid-template-areas:

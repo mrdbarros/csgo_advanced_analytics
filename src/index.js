@@ -73,6 +73,19 @@ const App = () => {
 
   return (
     <>
+      <nav className="top-nav">
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Estatísticas</a>
+          </li>
+          <li>
+            <a>Quem somos</a>
+          </li>
+        </ul>
+      </nav>
       <div id="graph-container" className="graph-container">
         <GraphTitle graphTitle={graphTitle} graphSubtitle={graphSubtitle} />
         <ScatterPlotControls

@@ -2,7 +2,46 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
-  background: #d3ae9d;
+  background: #dbdbdb;
+}
+
+body .top-nav {
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+body .top-nav ul {
+  margin: 0 auto;
+  width: 70%;
+  text-align: left;
+}
+
+body .top-nav ul li {
+  display: inline;
+}
+
+body .top-nav ul li :hover {
+  background-color: grey;
+}
+
+body .top-nav ul li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
 }
 
 body .tick {
@@ -27,7 +66,7 @@ body .tick .axis-label {
 body .graph-container {
   display: -ms-grid;
   display: grid;
-  margin: 0 auto;
+  margin: 30px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,7 +77,6 @@ body .graph-container {
   row-gap: 0;
   -webkit-column-gap: 5%;
           column-gap: 5%;
-  background: w;
   -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
   -ms-grid-rows: 1fr 3fr;
